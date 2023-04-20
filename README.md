@@ -1,6 +1,9 @@
-ummary: in this tutorial, you will learn about the JavaScript events, event models, and how to handle events.
+## Summary:
 
-Introduction to JavaScript events
+In this tutorial, you will learn about the JavaScript events, event models, and how to handle events.
+
+## Introduction to JavaScript events
+
 An event is an action that occurs in the web browser, which the web browser feedbacks to you so that you can respond to it.
 
 For example, when users click a button on a webpage, you may want to respond to this click event by displaying a dialog box.
@@ -34,6 +37,8 @@ see below button with an id of "increment-btn"
 
 To define the code that will be executed when the button is clicked, you need to register an event handler using the addEventListener() method:
 
+## Example:
+
 const incrementBtn = document.querySelector("#increment-btn");
 
 function countClick() {
@@ -42,12 +47,13 @@ console.log("The button was clicked");
 
 incrementBtn.addEventListener("click", countClick);
 
-How it works.
+## How it works.
 
 First, select the button with the id btn by using the querySelector() method.
 Then, define a function called display() as an event handler.
 Finally, register an event handler using the addEventListener() so that when users click the button, the display() function will be executed.
-A shorter way to register an event handler is to place all code in an anonymous function, like this:
+
+## A shorter way to register an event handler is to place all code in an anonymous function, like this:
 
 incrementBtn.addEventListener("click", function () {
 console.log("The button was clicked");
